@@ -1,0 +1,78 @@
+.homepage {  
+  position: relative; /* Set the position to relative for the overlay */  
+  height: 100vh;  
+  width: 100vw;  
+  background-image: url("../assets/healthify_brain_image4.jpg");  
+  background-size: cover;  
+  background-position: center;  
+  padding: 2.5rem 5rem;  
+  color: aliceblue;  
+}  
+
+.overlay {  
+  position: absolute; /* Position overlay absolutely within .homepage */  
+  top: 0;  
+  left: 0;  
+  right: 0;  
+  bottom: 0;  
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the color and opacity as needed rgba(0, 0, 0, 0.5); */  
+  z-index: 1; /* Ensure the overlay is above the background but below the text */  
+}  
+
+.content {  
+  position: relative;
+  color: white; /* Ensure text remains visible */  
+  opacity: 1;
+  z-index: 2; /* Text will be above the overlay */  
+  height: 100%;
+}  
+
+.pagenavTop{
+  z-index: 3;
+}
+
+.StartPredicting {  
+  display: inline-block; /* Allows padding and margin */  
+  padding: 2rem 2rem; /* Add some padding */  
+  background-color: rgb(29, 41, 154);/* Green background */  
+  color: white; /* White text */  
+  text-decoration: none; /* Remove underline */  
+  border-radius: 5px; /* Rounded corners */  
+  transition: background-color 0.3s; /* Smoother hover effect */  
+}  
+
+.StartPredicting:hover {  
+  background-color: rgb(20, 38, 110); /* Darker green on hover */  
+}  
+  
+  .homepage section {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    text-align: center;
+  }
+  
+  .homepage h1 {
+    font-size: 4.5rem;
+    line-height: 1.3;
+  }
+  
+  .homepage h2 {
+    width: 90%;
+    font-size: 1.9rem;
+    color: var(--color-light--1);
+    margin-bottom: 2.5rem;
+  }
+
+.StartPredicting{
+  font-size: medium;
+  text-decoration: none;
+
+  color: aliceblue;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+  

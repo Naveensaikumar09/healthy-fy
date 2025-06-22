@@ -1,0 +1,79 @@
+ /* .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+  }
+  .nav a:link,
+.nav a:visited {
+  text-decoration: none;
+  color: var(--color-light--2);
+  
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+
+.nav a:global(.active) {
+  color: var(--color-brand--2);
+}
+
+a.ctaLink:link,
+a.ctaLink:visited {
+  background-color: var(--color-brand--2);
+  color: var(--color-dark--0);
+  padding: 0.8rem 2rem;
+  border-radius: 7px;
+} 
+ */
+
+
+ .nav {  
+  position: fixed; /* Fixes the position */  
+  top: 0; 
+  width: 100vw;
+  display: flex;  
+  align-items: center;  
+  justify-content: space-between;  
+  z-index: 3; /* Ensure it's above the overlay */  
+  padding: 1.5rem;
+  color: aliceblue;
+}  
+
+.nav ul {  
+  list-style: none;  
+  display: flex;  
+  align-items: center;  
+  gap: 6rem;  
+  margin-right: 35px;
+}  
+
+.nav a:link,  
+.nav a:visited {  
+  text-decoration: none;  
+  color: var(--color-light--2); /* Ensure this variable is a color that contrasts well with the overlay */  
+  font-size: 1.5rem;  
+  font-weight: 600;  
+  opacity: 1; /* Explicitly set opacity to 1 */  
+}  
+
+/* CSS Modules feature */  
+.nav a:global(.active) {  
+  color: var(--color-brand--2);  
+}  
+
+a.ctaLink:link,  
+a.ctaLink:visited {  
+  background-color: var(--color-brand--2);  
+  color: var(--color-dark--0);  
+  padding: 0.8rem 2rem;  
+  border-radius: 7px;  
+  opacity: 1; /* Ensure this also has full opacity */  
+}  
+

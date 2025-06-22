@@ -1,0 +1,28 @@
+.logo {
+    height: 5.2rem;
+    
+  }
+
+.logo-contianer{
+  display: flex;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.logo-contianer span{
+ font-size: xx-large;
+ text-transform: none;
+
+}
+
+.logo-contianer-container{
+  width: 50px; /* Set width according to your image */  
+    height: 50px; /* Ensure height is equal to width for a perfect circle */  
+    overflow: hidden; /* Ensures anything outside the circle is hidden */  
+    border-radius: 50%; /* Makes the container round */  
+    display: flex; /* Centering the image */  
+    justify-content: center;  
+    align-items: center; 
+}

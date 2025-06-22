@@ -1,0 +1,99 @@
+/* ResultPage.css */  
+
+body {  
+  background: #000000;  
+  margin: 0;  
+  padding: 0;  
+}  
+
+.page {  
+  background: #000000;  
+  padding: 20px;  
+  min-height: 100vh;  
+  display: flex;  
+  flex-direction: column;  
+}  
+
+.result-container {  
+  max-width: 100vw;  
+  margin: 10rem;  
+  flex: 1;  
+  display: flex;  
+  flex-wrap: wrap;  
+  gap: 20px;  
+}  
+
+
+
+.trait-card {  
+  position: relative;  
+  padding: 15px;  
+  width: 30rem;
+}  
+
+.trait-badge {  
+  position: relative;  
+  padding: 20px;  
+  border-radius: 15px;  
+  backdrop-filter: blur(10px);  
+  border: 1px solid rgba(0, 255, 255, 0.1);  
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);  
+  animation: blueGlow 2s ease-in-out infinite alternate;  
+}  
+
+.risk-card {  
+  width: 100%;  
+  text-align: center;  
+  padding: 20px;  
+}  
+
+.risk-badge {  
+  position: relative;  
+  padding: 20px;  
+  border-radius: 15px;  
+  backdrop-filter: blur(10px);  
+  border: 1px solid rgba(0, 255, 255, 0.1);  
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);  
+  animation: blueGlow 2s ease-in-out infinite alternate;  
+}  
+
+.trait-name, .risk-title {  
+  color: white !important;  
+  margin: 0;  
+}  
+
+.trait-value, .risk-value {  
+  color: white !important;  
+  font-size: 2.5em !important;  
+  margin: 0;  
+}  
+
+.trait-score {  
+  color: rgba(255, 255, 255, 0.8);  
+  font-size: 0.9em;  
+  margin-top: 5px;  
+}  
+
+@keyframes blueGlow {  
+  from {  
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);  
+  }  
+  to {  
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);  
+  }  
+}  
+
+/* Responsive Design */  
+@media (max-width: 768px) {  
+  .traits-grid {  
+    grid-template-columns: 1fr;  
+  }  
+  
+  .trait-badge, .risk-badge {  
+    padding: 15px;  
+  }  
+  
+  .trait-value, .risk-value {  
+    font-size: 2em !important;  
+  }  
+}  
